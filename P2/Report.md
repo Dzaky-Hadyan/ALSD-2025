@@ -56,3 +56,23 @@ Source code dari pertanyaan praktikum percobaan 3 berada di Source_Code/Mahasisw
 3. Hasilnya adalah terjadi error karena konstruktor Mahasiswa07() tidak terdefinisi. Jika kita menghapus konstruktor default, yang terpanggil adalah konstruktor ber-parameter, sehingga menyebabkan instansiasi yang kita lakukan mengalami error karena parameternya kosong
 4. Tidak, karena method di dalam class hanya dapat diakses ketika dipanggil setelah instansiasi
 5.     Mahasiswa07 mhsDzaky = new Mahasiswa07("Dzaky Hadyan Eliyanta", "244107020117", 3.86, "TI 1H");   
+
+## 4. Jawaban Latihan Praktikum 1
+
+Source code dari latihan praktikum 1 berada di Source_Code/MataKuliah07.java dan Source_Code/MataKuliahMain07.java, dan berikut screenshot dari hasilnya
+
+![Screenshot](Assets/Screenshot%202025-02-24%20220725.png)
+
+**Alur Program**
+
+1. 121106
+
+## 5. Jawaban Latihan Praktikum 2
+
+Source code dari latihan praktikum 2 berada di Source_Code/Dosen07.java dan Source_Code/DosenMain07.java, dan berikut screenshot dari hasilnya
+
+![Screenshot](Assets/Screenshot%202025-02-24%20220725.png)
+
+**Alur Program**
+
+1. 
