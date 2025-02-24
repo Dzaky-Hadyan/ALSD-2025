@@ -65,14 +65,27 @@ Source code dari latihan praktikum 1 berada di Source_Code/MataKuliah07.java dan
 
 **Alur Program**
 
-1. 121106
+1. Pada file MataKuliah07.java, buat class `MataKuliah07` dengan atribut `String kodeMK, nama`, dan `int sks, jumlahJam`
+2. Buat konstruktor default `MataKuliah07()` dan konstruktor ber-parameter `MataKuliah07()` dengan parameter berupa atribut class
+3. Buat method `tampilInformasi()` yang menampilkan atribut class
+4. Buat method `ubahSKS()` dengan parameter `int sksBaru` yang mengubah nilai sks dari object yang dipanggil menjadi nilai dari sksBaru, dan menampilkan peringatan bahwa SKS telah diubah
+5. Buat method `tambahJam()` dengan parameter `int jam` yang mengubah nilai `jumlahJam` dari object yang dipanggil menjadi penjumlahan dari `jumlahJam` dan `jam`, dan mengembalikan nilai `jumlahJam` yang baru
+6. Buat method `kurangJam()` dengan parameter `int jam` yang mengubah nilai `jumlahJam` dari object yang dipanggil menjadi pengurangan dari `jumlahJam` dan `jam` hanya jika `jumlahJam` >= `jam`, dan jika tidak, menampilkan peringatan
+7. Pada file MataKuliahMain07.java, instansiasi object `mk1` dengan konstruktor default, kemudian input nilai atribut-atributnya, setelah itu panggil method `tampilInformasi()`, `ubahSKS()` dengan parameter, `tambahJam()` dengan parameter, `kurangJam()` dengan parameter, dan `tampilInformasi()`
+8. instansiasi object `mk2` dengan konstruktor ber-parameter, kemudian input nilai atribut-atributnya dari dalam parameter, setelah itu panggil method `tampilInformasi()`, `ubahSKS()` dengan parameter, `tambahJam()` dengan parameter, `kurangJam()` dengan parameter, dan `tampilInformasi()`
 
 ## 5. Jawaban Latihan Praktikum 2
 
 Source code dari latihan praktikum 2 berada di Source_Code/Dosen07.java dan Source_Code/DosenMain07.java, dan berikut screenshot dari hasilnya
 
-![Screenshot](Assets/Screenshot%202025-02-24%20220725.png)
+![Screenshot](Assets/Screenshot%202025-02-25%20061503.png)
 
 **Alur Program**
 
-1. 
+1. Pada file Dosen07.java, buat class `Dosen07` dengan atribut `String idDosen, nama, bidangKeahlian`, `boolean statusAktif`, dan `int tahunBergabung`
+2. Buat konstruktor default `Dosen07()` dan konstruktor ber-parameter `Dosen07()` dengan parameter berupa atribut class
+3. Buat method `tampilInformasi()` yang menampilkan atribut class
+4. Buat method `setStatusAktif()` dengan parameter `boolean status` yang mengubah nilai `statusAktif` dari object yang dipanggil menjadi nilai dari `status`, kemudian mengembalikan `statusAktif` yang baru
+5. Buat method `hitungMasaKerja()` denngan parameter `int thnSkrg` yang menginisialisasi variabel `int lamaBergabung` yang merupakan hasil pengurangan dari `thnSkrg` dengan `lamaBergabung`, kemudian menampilkannya
+6. Buat method `ubahKeahlian()` dengan parameter `String bidang` yang mengubah nilai `bidangKeahlian` dari object yang dipanggil menjadi nilai dari `bidang`, kemudian mengembalikan `bidangKeahlian` yang baru
+7. Pada file DosenMain07.java, instansiasi object `dsn1` dengan konstruktor default, kemudian input nilai atribut-atributnya, setelah itu panggil method `tampilInformasi()` untuk menampilkan informasi awal, `setStatusAktif()` dengan nilai parameter berlawanan dari `statusAktif`, `hitungMasaKerja()` dengan nilai parameter berupa tahun sekarang, `ubahKeahlian()` dengan nilai parameter berupa bidang keahlian baru yang menggantikan, dan `tampilInformasi()` di akhir untuk menampilkan perubahan pada data
