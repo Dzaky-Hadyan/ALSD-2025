@@ -25,8 +25,8 @@ public class Dosen07 {
         System.out.println("Bidang keahlian: " + bidangKeahlian);
     }
 
-    String setStatusAktif(boolean statusSet) {
-        if (statusSet == true) {
+    String setStatusAktif(boolean status) {
+        if (status == true) {
             return "Aktif";
         } else {
             return "Tidak Aktif";
