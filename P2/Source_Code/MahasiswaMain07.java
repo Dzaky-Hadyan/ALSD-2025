@@ -18,5 +18,6 @@ public class MahasiswaMain07 {
         mhs2.tampilkanInformasi();
 
         Mahasiswa07 mhsDzaky = new Mahasiswa07("Dzaky Hadyan Eliyanta", "244107020117", 3.86, "TI 1H");
+        mhsDzaky.tampilkanInformasi();
     }
 }
