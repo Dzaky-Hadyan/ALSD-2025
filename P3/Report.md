@@ -13,7 +13,11 @@ Source code dari pertanyaan praktikum percobaan 1 berada di Source_Code/Mahasisw
 
 **Jawaban Pertanyaan**
 
-1. 
+1. Tidak, class yang akan dibuat array of object bisa hanya memiliki atribut, hanya memiliki method, maupun tidak memiliki apapun
+2. Kode program tersebut menginisiasi array `arrayOfMahasiswa` dengan tipe data `Mahasiswa[]` dan panjang 3
+3. Tidak, class `Mahasiswa` tidak memiliki konstruktor, namun bisa dilakukan pemanggilan konstruktor karena java secara otomatis memberikan konstruktor default ke class yang tidak diberi konstruktor
+4. Kode program tersebut menginstansiasi/membentuk object `arrayOfMahasiswa[0]` dari class `Mahasiswa()` kemudian mengisi nilai atribut-atributnya secara manual
+5. Class `Mahasiswa` dan `MahasiswaDemo` dipisahkan pada uji coba 3.2 karena class public harus memiliki nama yang sama dengan nama file, sedangkan classnya harus kita pisahkan karena kita membuat class `Mahasiswa` non-static, jadi hanya bisa dipanggil oleh class lain, yang berada di file lain
 
 ## 2. Jawaban Praktikum Percobaan 2
 
