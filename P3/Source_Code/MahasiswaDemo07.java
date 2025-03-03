@@ -23,15 +23,15 @@ public class MahasiswaDemo07 {
             arrayOfMahasiswa[i].ipk = Float.parseFloat(dummy);
             System.out.println("-------------------------------");
         }
-
         for (int i = 0; i < 3; i++) {
-            System.out.println("Data Mahasiswa ke-" + (i + 1));
-            System.out.println("NIM     : "+ arrayOfMahasiswa[i].nim);
-            System.out.println("Nama    : "+ arrayOfMahasiswa[i].nama);
-            System.out.println("Kelas   : "+ arrayOfMahasiswa[i].kelas);
-            System.out.println("IPK     : "+ arrayOfMahasiswa[i].ipk);
-            System.out.println("-------------------------------");
+            arrayOfMahasiswa[i].cetakInfo(arrayOfMahasiswa, i);
         }
+
+        Mahasiswa07[] myArrayOfMahasiswa = new Mahasiswa07[3];
+        myArrayOfMahasiswa[0].nim = "244107060033";
+        myArrayOfMahasiswa[0].nama = "AGNES TITANIA KINANTI";
+        myArrayOfMahasiswa[0].kelas = "SIB-1E";
+        myArrayOfMahasiswa[0].ipk = (float) 3.75;
         sc.close();
     }
 }
