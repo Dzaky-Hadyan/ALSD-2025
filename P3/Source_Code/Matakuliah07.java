@@ -3,6 +3,7 @@ package P3.Source_Code;
 import java.util.Scanner;
 
 public class Matakuliah07 {
+    Scanner sc = new Scanner(System.in);
     public String kode;
     public String nama;
     public int sks;
@@ -20,8 +21,6 @@ public class Matakuliah07 {
     }
 
     public void tambahData(Matakuliah07[] arrayOfMatakuliah, int i) {
-        Scanner sc = new Scanner(System.in);
-
         System.out.println("Masukkan Data Matakuliah ke-" + (i + 1));
         System.out.print("Kode       : ");
         arrayOfMatakuliah[i].kode = sc.nextLine();
@@ -34,7 +33,6 @@ public class Matakuliah07 {
         arrayOfMatakuliah[i].jumlahJam = sc.nextInt();
         sc.nextLine();
         System.out.println("-----------------------------");
-        sc.close();
     }
 
     public void cetakInfo(Matakuliah07[] arrayOfMatakuliah, int i) {

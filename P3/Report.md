@@ -55,8 +55,8 @@ Source code dari pertanyaan praktikum percobaan 3 berada di Source_Code/Matakuli
 
 1. Ya, suatu class dapat memiliki lebih dari 1 contructor, contohnya terdapat pada P2/Source_Code/Dosen07.java di mana saya menggunakan constructor default dan constructor berparameter, kemudian memanggil keduanya pada P2/Source_Code/DosenMain07.java
 2.     //Pada class Matakuliah07
+       Scanner sc = new Scanner(System.in);
        void tambahData(Matakuliah07[] arrayOfMatakuliah, int i) {
-        Scanner sc = new Scanner(System.in);
 
         System.out.println("Masukkan Data Matakuliah ke-" + (i + 1));
         System.out.print("Kode       : ");
@@ -70,8 +70,8 @@ Source code dari pertanyaan praktikum percobaan 3 berada di Source_Code/Matakuli
         arrayOfMatakuliah[i].jumlahJam = sc.nextInt();
         sc.nextLine();
         System.out.println("-----------------------------");
-        sc.close();
        }
+       sc.close();
 
        //Pada class MatakuliahDemo07
        for (int i = 0; i < 3; i++) {
@@ -94,7 +94,7 @@ Source code dari pertanyaan praktikum percobaan 3 berada di Source_Code/Matakuli
        }
 4.     int sks, jumlahJam, panjangArray;
 
-        System.out.println("Masukkan panjang array: ");
+        System.out.print("Masukkan panjang array: ");
         panjangArray = sc.nextInt();
         Matakuliah07[] arrayOfMatakuliah = new Matakuliah07[panjangArray];
    Kode program yang berkaitan dengan panjang array, seperti pada kondisi perulangan i, disesuaikan menjadi `panjangArray`
@@ -108,4 +108,4 @@ Source code dari tugas 1 berada di Source_Code/Dosen07.java dan Source_Code/Dose
 
 **Alur Program**
 
-1.
+1. 
