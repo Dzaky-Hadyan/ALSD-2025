@@ -11,7 +11,7 @@ public class DosenDemo07 {
         for (int i = 0; i < arrayOfDosen.length; i++) {
             arrayOfDosen[i] = new Dosen07(null, null, null, i);
 
-            System.out.printf("Masukkan Data Dosen ke-%d: \n", i+1);
+            System.out.printf("Masukkan Data Dosen ke-%d \n", i+1);
             System.out.printf("Kode          : ");
             arrayOfDosen[i].kode = sc.nextLine();
             System.out.printf("Nama          : ");
@@ -32,10 +32,24 @@ public class DosenDemo07 {
             System.out.printf("-------------------------------\n");
         }
 
-        for (Dosen07 dosen07 : arrayOfDosen) {
-            System.out.printf("Data Dosen ke-%d\n", dosen07);
-            System.out.printf("Kode          : %d", dosen07.kode);
+        for (Dosen07 obj : arrayOfDosen) {
+            System.out.printf("Data %s\n", obj.nama);
+            System.out.printf("Kode          : %s\n", obj.kode);
+            System.out.printf("Nama          : %s\n", obj.nama);
+            System.out.printf("Jenis Kelamin : ");
+            if (obj.jenisKelamin == true) {
+                System.out.println("Pria");
+            } else {
+                System.out.println("Wanita");
+            }
+            System.out.printf("Usia          : %d\n", obj.usia);
         }
+
+        DataDosen07.dataSemuaDosen(arrayOfDosen);
+        DataDosen07.jumlahDosenPerJenisKelamin(arrayOfDosen);
+        DataDosen07.rerataUsiaDosenPerJenisKelamin(arrayOfDosen);
+        DataDosen07.infoDosenPalingTua(arrayOfDosen);
+        DataDosen07.infoDosenPalingMuda(arrayOfDosen);
         sc.close();
     }
 }

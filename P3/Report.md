@@ -99,13 +99,33 @@ Source code dari pertanyaan praktikum percobaan 3 berada di Source_Code/Matakuli
         Matakuliah07[] arrayOfMatakuliah = new Matakuliah07[panjangArray];
    Kode program yang berkaitan dengan panjang array, seperti pada kondisi perulangan i, disesuaikan menjadi `panjangArray`
 
-## 4. Jawaban Tugas 1
+## 4. Jawaben Tugas 1
 
 Source code dari tugas 1 berada di Source_Code/Dosen07.java dan Source_Code/DosenDemo07.java, dan berikut screenshot dari hasilnya
 
-![Screenshot](Assets/Screenshot%202025-02-27%20114717.png)
-![Screenshot](Assets/Screenshot%202025-02-27%20114745.png)
+![Screenshot](Assets/Screenshot%202025-03-05%20131247.png)
 
 **Alur Program**
 
-1. 
+1. Pada file Dosen07.java, buat class `Dosen07` dengan attribute `String kode, nama`, `Boolean jenisKelamin`, dan `int usia`
+2. Buat constructor ber-parameter dengan parameter berupa attribute class
+3. Pada file DosenDemo07.java, buat class `DosenDemo07`, dan tambahkan class main untuk menginput dan memanggil data dari class Dosen07
+4. Inisiasi/mendeklarasikan array `arrayOfDosen[]` dengan tipe data `Dosen07` dan variabel `dummy` dengan tipe data `String`
+5. Buat perulangan for untuk menginput data ke `arrayOfDosen[]`, dan khusus bagian `jenisKelamin` gunakan pemilihan jika pria maka true dan sebaliknya
+6. Buat perulangan foreach untuk mencetak isi `arrayOfDosen[]`
+
+## 5. Jawaban Tugas 2
+
+Source code dari tugas 2 berada di Source_Code/Dosen07.java, Source_Code/DosenDemo07.java, dan Source_Code/DataDosen07.java dan berikut screenshot dari hasilnya
+
+![Screenshot](Assets/Screenshot%202025-03-05%20151938.png)
+![Screenshot](Assets/Screenshot%202025-03-05%20152032.png)
+
+**Alur Program**
+
+1. Pada file DataDosen07.java, buat class `DataDosen07` yang tidak memiliki attribute dan hanya memiliki method untuk dipanggil pada class `DosenDemo07`
+2. Buat method `static void dataSemuaDosen(Dosen07[] arrayOfDosen)` yang berisi perulangan untuk menampilkan data semua dosen untuk dicetak di luar perulangan
+3. Buat method `static void jumlahDosenPerJenisKelamin(Dosen07[] arrayOfDosen)` yang berisi pemilihan counter pria dan wanita di dalam perulangan untuk dicetak 
+4. Buat method `static void rerataUsiaDosenPerJenisKelamin(Dosen07[] arrayOfDosen)` yang berisi variabel counter pria dan wanita, dan variabel penyimpan nilai total usia pria dan wanita. Kemudian membuat perulangan untuk mencari dari `arrayOfDosen[]` yang diseleksi berdasarkan `jenisKelamin` nya, kemudian disimpan nilai usia dan index `jenisKelamin` terkait ke variabel jumlah dan counter. Selanjutnya mencetak hasil pembagian dari jumlah usia pria dan wanita masing-masing dengan index kelamin terkait
+5. Buat method `static void infoDosenPalingTua(Dosen07[] arrayOfDosen)` berisi perulangan yang di dalamnya terdapat pemilihan untuk menemukan dosen dengan usia tertua dengan indexnya. Kemudian ditampilkan data dari `arrayOfDosen[]` tertua dengan index terkait
+6. Buat method `static void infoDosenPalingMuda(Dosen07[] arrayOfDosen)` berisi perulangan yang di dalamnya terdapat pemilihan untuk menemukan dosen dengan usia termuda dengan indexnya. Kemudian ditampilkan data dari `arrayOfDosen[]` termuda dengan index terkait
