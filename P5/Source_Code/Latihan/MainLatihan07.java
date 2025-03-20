@@ -3,7 +3,6 @@ package P5.Source_Code.Latihan;
 public class MainLatihan07 {
     public static void main(String[] args) {
         int[] nilaiUTS = new int[8];
-        int[] nilaiUAS = new int[8];
         Latihan07[] mahasiswa = new Latihan07[8];
         mahasiswa[0] = new Latihan07("Ahmad", 78, 82);
         mahasiswa[1] = new Latihan07("Budi", 85, 88);

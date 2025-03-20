@@ -128,4 +128,12 @@ Source code dari latihan praktikum berada di Source_Code/Latihan07.java dan Sour
 
 **Alur Program**
 
-1. 
+1. Pada file Latihan07.java, buat class `Latihan07` dengan attribute `String nama`, dan `int nilaiUTS, nilaiUAS, tertinggiUTS`
+2. Buat constructor ber-parameter dengan parameter berupa attribute class
+3. Buat method `int tertinggiUTSDC(int arr[], int l, int r)`, `int terendahUTSDC(int arr[], int l, int r)`, dan `double rerataUASBF(Latihan07[] mahasiswa)`
+4. Method `tertinggiUTSDC()` dan `terendahUTSDC()` bekerja dengan algoritma yang sama, yaitu *divide conquer*. Method akan memanggil dirinya sendiri dengan parameter `l` dan `r` yang berperan sebagai indikator pembagi index array `arr[]` dengan parameter `mid` sebagai indikator pemisah antara `l` dan `r`, sehingga membagi operasi tersebut menjadi beberapa bagian kemudian terus membandingkan hasil setiap pemanggilan menggunakan pemilihan, pada `tertinggiUTSDC()` menggunakan `lhighest > rhighest` sedangkan pada `terendahUTSDC()` menggunakan `llowest < rlowest`, dan mengembalikan hasilnya, sehingga secara tidak langsung meliputi bagian combine dari fungsi rekursi
+5. Pada file MainLatihan07.java, buat class `DosenDemo07`, dan tambahkan class main
+6. Inisialisasi array `int[] nilaiUTS` yang berperan sebagai tempat penyimpanan nilai uts setiap mahasiswa, dan `Latihan07[] mahasiswa` yang berperan sebagai tempat penyimpanan array of object yang berisi object dari setiap mahasiswa
+7. Lakukan instansiasi untuk ke-8 mahasiswa sembari mengisi parameter `nama`, `nilaiUTS`, dan `nilaiUAS`
+8. Buat perulangan untuk mengisi array `nilaiUTS[]` dengan nilai UTS dari array of object `mahasiswa[]`
+9. Panggil method dari mahasiswa, yaitu `tertinggiUTSDC()`, `terendahUTSDC()`, dan `rerataUASBF()` dengan parameternya masing-masing. Di sini saya menggunkan `mahasiswa[0]` untuk memanggil method dari mahasiswa karena `mahasiswa[]` merupakan array, sehingga harus disertakan index yang dipanggil. Tetapi sejatinya tidak berpengaruh pada pemanggilan method-nya karena parameter yang saya gunakan tidak berasal dari atribut object tertentu di array `mahasiswa[]`, melainkan menggunakan semua nilai UTS dan nilai UAS dari semua anggota array `mahasiswa[]`
