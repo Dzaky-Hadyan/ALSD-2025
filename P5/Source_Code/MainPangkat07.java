@@ -1,4 +1,5 @@
 package P5.Source_Code;
+
 import java.util.Scanner;
 
 public class MainPangkat07 {

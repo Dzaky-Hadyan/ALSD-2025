@@ -99,9 +99,9 @@ Source code dari pertanyaan praktikum percobaan 3 berada di Source_Code/Matakuli
         Matakuliah07[] arrayOfMatakuliah = new Matakuliah07[panjangArray];
    Kode program yang berkaitan dengan panjang array, seperti pada kondisi perulangan i, disesuaikan menjadi `panjangArray`
 
-## 4. Jawaben Tugas 1
+## 4. Jawaben Latihan Praktikum
 
-Source code dari tugas 1 berada di Source_Code/Dosen07.java dan Source_Code/DosenDemo07.java, dan berikut screenshot dari hasilnya
+Source code dari latihan praktikum berada di Source_Code/Dosen07.java dan Source_Code/DosenDemo07.java, dan berikut screenshot dari hasilnya
 
 ![Screenshot](Assets/Screenshot%202025-03-05%20131247.png)
 
