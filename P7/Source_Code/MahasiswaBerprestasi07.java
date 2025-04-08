@@ -1,8 +1,12 @@
 package P7.Source_Code;
 
 public class MahasiswaBerprestasi07 {
-    Mahasiswa07[] listMhs = new Mahasiswa07[5];
     int idx;
+    Mahasiswa07 listMhs[];
+
+    MahasiswaBerprestasi07(int jumMhs) {
+        listMhs = new Mahasiswa07[jumMhs];
+    }
 
     void tambah (Mahasiswa07 m) {
         if (idx < listMhs.length) {
@@ -87,4 +91,49 @@ public class MahasiswaBerprestasi07 {
             System.out.println("Data mahasiswa dengan IPK " + x + " tidak ditemukan");
         }
     }
+
+    int findBinarySearch(double cari, int left, int right) {
+        int mid;
+        // if (right >= left) {
+        //     mid = (left + right)/2;
+        //     if (cari == listMhs[mid].ipk) {
+        //         return (mid);
+        //     } else if (listMhs[mid].ipk > cari) {
+        //         return findBinarySearch(cari, left, mid-1);
+        //     } else {
+        //         return findBinarySearch(cari, mid+1, right);
+        //     }
+        // }
+        //Jawaban No. 4
+        if (right >= left) {
+            mid = (left + right)/2;
+            if (cari == listMhs[mid].ipk) {
+                return (mid);
+            } else if (listMhs[mid].ipk > cari) {
+                return findBinarySearch(cari, mid+1, right);
+            } else {
+                return findBinarySearch(cari, left, mid-1);
+            }
+        }
+        return -1;
+    }
+    /* findBinarySearch(cari, left, right)
+    findBinarySearch(3.7, 0, 4), 0:3.1 1:3.2 2:3.3 3:3.5 4:3.7
+    mid = (0+4)/2 = 2
+    listMhs[mid].ipk < cari
+    findBinarySearch(3.7, 3, 4)
+    mid = (3+4)/2 = 3
+    listMhs[mid].ipk < cari
+    findBinarySearch(3.7, 4, 4)
+    mid = (4+4)/2 = 4
+    listMhs[mid].ipk == cari
+    return 4
+    findBinarySearch(3.2, 0, 4), 0:3.8 1:3.7 2:3.5 3:3.4 4:3.2
+    mid = (0+4)/2 = 2
+    listMhs[mid].ipk > cari
+    findBinarySearch(3.2, 0, 2)
+    mid = (0+2)/2 = 1
+    listMhs[mid].ipk > cari
+    findBinarySearch(3.2, 0, -1)
+     */
 }
