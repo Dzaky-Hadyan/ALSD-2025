@@ -46,3 +46,16 @@ c. Perulangan `i` akan berlangsung 49 kali, dan ada 48 tahap bubble sort yang di
 **Jawaban Pertanyaan 5.4.3**
 
 1. Modifikasi untuk insertionSort descending saya sertakan di Source_Code/MahasiswaBerprestasi07.java dengan mengubah kondisi while nya menjadi `j > 0 && listMhs[j - 1].ipk < temp.ipk`
+
+## 3. Jawaban Latihan Praktikum
+
+Source code dari latihan praktikum berada di Source_Code/Dosen07.java, Source_Code/DosenDemo07.java, dan Source_Code/DataDosen07.java
+
+**Alur Program**
+
+1. File Dosen07.java berisi class `Dosen07` yang digunakan untuk menyimpan objek dosen (satuan) beserta atribut-atributnya, yaitu `kode`, `nama`, `jenisKelamin`, dan `usia`
+2. class Dosen07 juga memiliki method `tampil()` yang berfungsi untuk menampilkan informasi dosen (satuan) menggunakan sout
+3. File DataDosen07.java berisi class DataDosen07 yang memiliki atribut array of object `dataDosen[]` dengan tipe data `Dosen07`, array inilah yang akan kita gunakan untuk menyimpan kumpulan instansiasi dari class `Dosen07` (array)
+4. class DataDosen07 juga memiliki berbagai method yang berfungsi untuk memanipulasi `dataDosen[]`. Seperti `tambah()` yang berfungsi untuk mengisi `dataDosen[]` dengan instansiasi `Dosen07`, `tampil()` yang berfungsi untuk menampilkan elemen dari `dataDosen[]` dengan melakukan perulangan pada pemanggilan method `dsn.tambah()` (memanggil method tambah() milik class Dosen07 atau yang kita panggil sebagai dsn), `sortingASC()` yang berfungsi untuk mengurutkan data pada `dataDosen[]` secara ascending/meningkat berdasarkan usia dengan menggunakan bubble sort, hal ini dapat dilakukan dengan menggunakan nested loop dengan panjang outer loop dan inner loop yang sama namun index inner loop berada di depan outer loop dan terdapat pemilihan di dalam inner loop tersebut (`if (dataDosen[j].usia < dataDosen[j - 1].usia)`) untuk menukar nilai saat ini dengan nilai sebelahnya apabila nilai tersebut lebih kecil
+5. Kemudian terdapat juga `sortingDSC()` yang berfungsi untuk mengurutkan data pada `dataDosen[]` secara descending/menurun berdasarkan usia dengan menggunakan selection sort, hal ini dapat dilakukan dengan menggunakan nested loop dengan panjang outer loop dan inner loop yang sama namun index inner loop berada di depan outer loop karena akan dibandingkan nilai antara index `i` dan `j` sebelahnya, apabila `j` lebih besar maka ditukar, dan jika tidak inner loop akan terus berjalan membandingkan sampai elemen terakhir `dataDosen[]`
+6. Terakhir, terdapat `insertionSort()` yang berfungsi untuk mengurutkan data pada `dataDosen[]` secara ascending/meningkat berdasarkan usia dengan menggunakan insertion sort, hal ini dapat dilakukan dengan menggunakan nested loop for dan while, dengan index outer loop = 1 karena index ke-0 dianggap bagian terurut. Kemudian membandingkan nilai-nilai di kanannya menggunakan perulangan while dan sekaligus terus menukarnya dengan nilai di bagian sorted yang lebih kecil
