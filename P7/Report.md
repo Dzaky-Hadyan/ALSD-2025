@@ -54,3 +54,15 @@ Mahasiswa07 listMhs[];
         listMhs = new Mahasiswa07[jumMhs];
     }
 ```
+
+## 3. Jawaban Latihan Praktikum
+
+Source code dari latihan praktikum berada di Source_Code/Dosen07.java, Source_Code/DosenDemo07.java, dan Source_Code/DataDosen07.java
+
+**Alur Program**
+
+1. Dikarenakan file-file yang digunakan ini merupakan salinan dari file di P6, maka bagian yang saya jelaskan adalah bagian yang baru dari P7 ini yaitu bagian searching
+2. File Dosen07.java tidak mengalami modifikasi/penambahan
+3. File DataDosen07.java mengalami modifikasi di mana class `DataDosen07` memiliki method baru, yaitu `int PencarianDataSequential07()` dengan parameter nama dosen yang dicari (`String cari`), `int PencarianDataBinary07()` dengan parameter nilai usia yang dicari (`int cari`), dan nilai index divide dari proses binary search (`int left, int right`)
+4. `int PencarianDataSequential07(String cari)` berfungsi untuk mencari data pada array yang tidak terurut menggunakan sequential search. Hal ini dapat dilakukan secara brute force, yaitu dengan melakukan perulangan untuk membandingkan (`if (dataDosen[j].nama.equalsIgnoreCase(cari))`) satu persatu data dari ujung array dengan data yang dicari, modifikasi yang saya lakukan adalah dengan tidak langsung mengembalikan nilai index dimana data ditemukan, tetapi menyimpan nilai itu dan melanjutkan perulangan sampai akhir. Sehingga apabila ditemukan index dengan data yang sama, program akan mengembalikan -2 sebagai penanda bahwa hasil pencarian lebih dari 1
+5. `int PencarianDataBinary07(int cari, int left, int right)` berfungsi untuk mencari data pada array yang terurut baik ascending/descending menggunakan sequential search. Hal ini dapat dilakukan menggunakan algoritma divide & conquer, yaitu dengan membandingkan nilai yang dicari dengan nilai index tengah dari `dataDosen[]` (`if (cari == dataDosen[mid].usia)`). Apabila nilai sama/sesuai, nilai tersebut dibandingkan lagi dengan index di depan dan belakangnya. Apabila nilai sama/sesuai lagi, maka program mengembalikan -2 sebagai penanda bahwa hasil pencarian lebih dari 1. Dan apabila nilai tidak sama, maka program akan mengembalikan `mid` sebagai posisi index data sesuai. Sedangkan apabila pada pemilihan pertama data pada `mid` tidak sama dengan data yang dicari, maka dilakukan pemilihan lagi. Apabila data pada `dataDosen[mid]` lebih besar dari data yang dicari, maka program akan melakukan recursion call ke arah kiri index (jika data ascending), yaitu dengan memanggil kembali fungsi tetapi menggunakan nilai `mid-1` sebagai parameter `int right` nya agar program mengecek nilai tengah pada sisi kiri sehingga "membagi" array tersebut. Sedangkan apabila data pada `dataDosen[mid]` lebih kecil dari data yang dicari, maka program akan melakukan recursion call ke arah kanan index (jika data ascending), yaitu dengan memanggil kembali fungsi tetapi menggunakan nilai `mid+1` sebagai parameter `int left` nya agar program mengecek nilai tengah pada sisi kanan

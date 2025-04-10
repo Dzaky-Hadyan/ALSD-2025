@@ -74,14 +74,13 @@ public class DataDosen07 {
     }
 
     int PencarianDataBinary07(int cari, int left, int right) {
-        int mid, sameValue = 0;
+        int mid;
         if (right >= left) {
             mid = (left + right)/2;
             if (cari == dataDosen[mid].usia) {
-                sameValue = dataDosen[mid].usia;
-                if (dataDosen[mid+1].usia == sameValue) {
+                if (dataDosen[mid+1].usia == dataDosen[mid].usia) {
                     return -2;
-                } else if (dataDosen[mid-1].usia == sameValue) {
+                } else if (dataDosen[mid-1].usia == dataDosen[mid].usia) {
                     return -2;
                 } else {
                     return mid;
