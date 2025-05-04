@@ -8,11 +8,13 @@ public class MahasiswaDemo07 {
         Scanner sc = new Scanner(System.in);
         int pilih;
         do {
-            System.out.println("\nMenu");
+            System.out.println("\nMenu:");
             System.out.println("1. Mengumpulkan Tugas");
             System.out.println("2. Menilai Tugas");
             System.out.println("3. Melihat Tugas Teratas");
             System.out.println("4. Melihat Daftar Tugas");
+            System.out.println("5. Melihat Tugas Terbawah");
+            System.out.println("6. Banyak Tugas Terkumpul Saat Ini");
             System.out.print("Pilih: ");
             pilih = sc.nextInt();
             sc.nextLine();
@@ -31,7 +33,7 @@ public class MahasiswaDemo07 {
                 case 2:
                     Mahasiswa07 dinilai = stack.pop();
                     if (dinilai != null) {
-                        System.out.printf("Menilai tugas dari %s", dinilai.nama);
+                        System.out.printf("Menilai tugas dari %s\n", dinilai.nama);
                         System.out.print("Masukkan nilai (0-100): ");
                         int nilai = sc.nextInt();
                         dinilai.tugasDinilai(nilai);
@@ -49,10 +51,19 @@ public class MahasiswaDemo07 {
                     System.out.println("Nama\tNIM\tKelas");
                     stack.print();
                     break;
+                case 5: 
+                    Mahasiswa07 mirsani = stack.pook();
+                    if (mirsani != null) {
+                        System.out.printf("Tugas pertama dikumpulkan oleh %s", mirsani.nama);
+                    }
+                    break;
+                case 6:
+                    stack.tugasTerkumpul();
+                    break;
                 default:
                 System.out.println("Pilihan tidak valid");
             }
-        } while (pilih >= 1 && pilih <= 4);
+        } while (pilih >= 1 && pilih <= 6);
         sc.close();
     }
 }
