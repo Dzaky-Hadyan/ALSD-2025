@@ -63,3 +63,7 @@ case 6:
 ```
 
 2. Praktikum Percobaan 2
+Source code dari praktikum percobaan 2 berada di Source_Code/Mahasiswa07.java, Source_Code/MahasiswaDemo07.java, dan Source_Code/StackTugasMahasiswa07.java, dan berikut screenshot dari hasilnya
+
+![Screenshot](Image/Screenshot%202025-05-02%20144128.png)
+![Screenshot](Image/Screenshot%202025-05-02%20144145.png)
