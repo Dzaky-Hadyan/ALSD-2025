@@ -67,3 +67,7 @@ Source code dari praktikum percobaan 2 berada di Source_Code/Mahasiswa07.java, S
 
 ![Screenshot](Image/Screenshot%202025-05-02%20144128.png)
 ![Screenshot](Image/Screenshot%202025-05-02%20144145.png)
+
+**Jawaban Pertanyaan**
+
+1. 
