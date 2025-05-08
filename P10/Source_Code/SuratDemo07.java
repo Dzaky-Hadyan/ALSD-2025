@@ -24,7 +24,7 @@ public class SuratDemo07 {
                     System.out.print("Kelas: ");
                     String kelas = sc.nextLine();
                     System.out.print("Jenis Izin: ");
-                    char jenis = sc.next().charAt(0);
+                    char jenis = sc.nextLine().charAt(0);
                     System.out.print("Durasi: ");
                     int durasi = sc.nextInt();
                     sc.nextLine();

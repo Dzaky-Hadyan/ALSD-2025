@@ -50,7 +50,7 @@ public class StackSurat07 {
         if (isEmpty()) {
             System.out.println("Stack kosong!");
         } else {
-            System.out.printf("ID Surat: \t%s\nNama Mahasiswa: %s\nKelas: \t\t%s\nJenis Izin: \t%C\nDurasi: \t%d\n", stack[top].idSurat, stack[top].namaMahasiswa, stack[top].kelas, stack[top].jenisIzin, stack[top].durasi);
+            System.out.println("ID Surat: \t"+stack[top].idSurat+"\nNama Mahasiswa: "+stack[top].namaMahasiswa+"\nKelas: \t\t"+stack[top].kelas+"\nJenis Izin: \t"+stack[top].jenisIzin+"\nDurasi: \t"+stack[top].durasi);
         }
     }
 

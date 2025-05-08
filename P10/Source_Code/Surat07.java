@@ -13,5 +13,6 @@ public class Surat07 {
         this.namaMahasiswa = namaMahasiswa;
         this.kelas = kelas;
         this.durasi = durasi;
+        this.jenisIzin = jenisIzin;
     }
 }
