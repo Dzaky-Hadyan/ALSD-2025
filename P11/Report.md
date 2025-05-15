@@ -45,10 +45,34 @@ if (isFull()) {
 
 ## 2. Praktikum Percobaan 2
 
-Source code dari praktikum percobaan 2 berada di Source_Code/Queue07.java dan Source_Code/QueueMain07.java, dan berikut screenshot dari hasilnya
+Source code dari praktikum percobaan 2 berada di Source_Code/Mahasiswa07.java, Source_Code/AntrianLayanan07.java, dan Source_Code/LayananAkademikSIAKAD07.java, dan berikut screenshot dari hasilnya
 
-![Screenshot](img/)
+![Screenshot](img/image.png)
+![Screenshot](img/Screenshot%202025-05-15%20093455.png)
+![Screenshot](img/Screenshot%202025-05-15%20093643.png)
 
 **Jawaban Pertanyaan**
 
-1.
+Berikut adalah modifikasi pada AntrianLayanan07.java
+```
+    public void lihatAkhir() {
+        if (isEmpty()) {
+            System.out.println("Antrian kosong.");
+        } else {
+            System.out.println("Mahasiswa posisi belakang: ");
+            System.out.println("NIM - NAMA - PRODI - KELAS");
+            data[rear].tampilkanData();
+        }
+    }
+```
+
+Berikut adalah modifikasi pada LayananAkademikSIAKAD07.java
+```
+System.out.println("6. Cek Antrian paling belakang");
+```
+```
+case 6:
+                    antrian.lihatAkhir();
+                    break;
+```
+
