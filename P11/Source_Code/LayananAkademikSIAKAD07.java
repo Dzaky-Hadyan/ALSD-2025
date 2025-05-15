@@ -8,7 +8,7 @@ public class LayananAkademikSIAKAD07 {
         AntrianLayanan07 antrian = new AntrianLayanan07(5);
         int pilihan;
         do {
-            System.out.println("\n=== Menu Antrian Layana Akademik ===");
+            System.out.println("\n=== Menu Antrian Layanan Akademik ===");
             System.out.println("1. Tambah Mahasiswa ke Antrian");;
             System.out.println("2. Layani Mahasiswa");
             System.out.println("3. Lihat Mahasiswa Terdepan");
