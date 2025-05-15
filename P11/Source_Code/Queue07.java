@@ -77,24 +77,23 @@ public class Queue07 {
         }
     }
 
-public int dequeue() {
-    int dt = 0;
-    if (isEmpty()) {
-        System.out.println("Queue masih kosong");
-    } else {
-        dt = data[front];
-        size--;
+    public int dequeue() {
+        int dt = 0;
         if (isEmpty()) {
-            front = rear = -1;
+            System.out.println("Queue masih kosong");
         } else {
-            if (front == max - 1) {
-                front = 0;
+            dt = data[front];
+            size--;
+            if (isEmpty()) {
+                front = rear = -1;
             } else {
-                front++;
+                if (front == max - 1) {
+                    front = 0;
+                } else {
+                    front++;
+                }
             }
         }
+        return dt;
     }
-    return dt;
-}
-
 }
