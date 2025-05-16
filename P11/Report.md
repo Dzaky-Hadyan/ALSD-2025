@@ -76,3 +76,36 @@ case 6:
                     break;
 ```
 
+## Tugas
+
+Source code dari latihan praktikum berada di Source_Code/Surat07.java, Source_Code/Mahasiswa07.java, Source_Code/AntrianPersetujuan07.java, Source_Code/PersetujuanKRSSIAKAD07.java, dan berikut screenshot dari hasilnya
+
+![Screenshot](img/Screenshot%202025-05-16%20104454.png)
+![Screenshot](img/Screenshot%202025-05-16%20104544.png)
+![Screenshot](img/Screenshot%202025-05-16%20104606.png)
+![Screenshot](img/Screenshot%202025-05-16%20104626.png)
+![Screenshot](img/Screenshot%202025-05-16%20104650.png)
+![Screenshot](img/Screenshot%202025-05-16%20104702.png)
+
+Berikut adalah class diagram nya
+| AntrianPersetujuan07 ||
+|:--:|:--:|
+| data | Mahasiswa07[ ] |
+| terproses | Mahasiswa07[ ] |
+| front | int |
+| rear | int |
+| size | int |
+| max | int |
+| processed | int |
+|AntrianPersetujuan07(max:int)|
+|isEmpty()|boolean|
+|isFull()|boolean|
+|clear()|void|
+|tambahAntrian(mhs:Mahasiswa07)|void|
+|panggilAntrian()|Mahasiswa07[ ]|
+|tampilkanSemua()|void|
+|tampil2Terdepan()|void|
+|tampilAkhir()|void|
+|tampilJumlahAntrian()|void|
+|tampilJumlahTerproses()|void|
+|tampilBlmTerproses()|void|
