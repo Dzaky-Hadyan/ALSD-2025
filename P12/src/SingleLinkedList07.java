@@ -1,4 +1,4 @@
-package P12.Source_Code;
+package P12.src;
 
 public class SingleLinkedList07 {
     Node07 head, tail;
@@ -10,7 +10,7 @@ public class SingleLinkedList07 {
     public void print() {
         if (!isEmpty()) {
             Node07 tmp = head;
-            System.out.print("Isi Linked List:\t");
+            System.out.println("Isi Linked List:\t");
             while (tmp != null) {
                 tmp.data.tampilInformasi();
                 tmp = tmp.next;

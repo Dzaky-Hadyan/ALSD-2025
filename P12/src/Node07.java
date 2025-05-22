@@ -1,4 +1,4 @@
-package P12.Source_Code;
+package P12.src;
 
 public class Node07 {
     Mahasiswa07 data;

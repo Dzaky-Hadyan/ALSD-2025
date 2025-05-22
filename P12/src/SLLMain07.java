@@ -1,4 +1,4 @@
-package P12.Source_Code;
+package P12.src;
 
 public class SLLMain07 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package P12.Source_Code;
+package P12.src;
 
 public class Mahasiswa07 {
     String nim, nama, kelas;
@@ -15,6 +15,6 @@ public class Mahasiswa07 {
     }
 
     public void tampilInformasi() {
-        
+        System.out.printf("NIM: \t\t%s\nNama: \t%s\nKelas: %s\nIPK: \t%.2f\n", nim, nama, kelas, ipk);
     }
 }
