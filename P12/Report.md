@@ -7,7 +7,7 @@
 
 ## 1. Praktikum Pembuatan Single Linked List
 
-Source code dari praktikum pembuatan single linked list berada di src/Node07.java, src/Mahasiswa07, src/SingleLinkedList0707.java, dan src/SLLMain07.java, dan berikut screenshot dari hasilnya
+Source code dari praktikum pembuatan single linked list berada di src/Node07.java, src/Mahasiswa07, src/SingleLinkedList07.java, dan src/SLLMain07.java, dan berikut screenshot dari hasilnya
 
 ![Screenshot](img/Screenshot%202025-05-22%20115047.png)
 
@@ -71,7 +71,7 @@ int menu = -1;
 
 ## 2. Modifikasi Elemen pada Single Linked List
 
-Source code dari praktikum pembuatan single linked list berada di src/Node07.java, src/Mahasiswa07, src/SingleLinkedList0707.java, dan src/SLLMain07.java, dan berikut screenshot dari hasilnya
+Source code dari praktikum pembuatan single linked list berada di src/Node07.java, src/Mahasiswa07, src/SingleLinkedList07.java, dan src/SLLMain07.java, dan berikut screenshot dari hasilnya
 
 ![Screenshot](img/Screenshot%202025-05-22%20115047.png)
 
@@ -82,6 +82,9 @@ Source code dari praktikum pembuatan single linked list berada di src/Node07.jav
 
 ## Tugas
 
-Source code dari tugas berada di src/Node07.java, src/Mahasiswa07, src/SingleLinkedList0707.java, dan src/SLLMain07.java, dan berikut screenshot dari hasilnya
+Source code dari tugas berada di src/Tugas/Node07.java, src/Tugas/Mahasiswa07, src/SLLQueue07.java, dan src/Main07.java, dan berikut screenshot dari hasilnya
 
-![Screenshot](img/Screenshot%202025-05-22%20115047.png)
+![Screenshot](img/Screenshot%202025-05-23%20180759.png)
+![Screenshot](img/Screenshot%202025-05-23%20180818.png)
+![Screenshot](img/Screenshot%202025-05-23%20180841.png)
+![Screenshot](img/Screenshot%202025-05-23%20180915.png)
