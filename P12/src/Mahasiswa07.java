@@ -15,6 +15,6 @@ public class Mahasiswa07 {
     }
 
     public void tampilInformasi() {
-        System.out.printf("NIM: \t\t%s\nNama: \t%s\nKelas: %s\nIPK: \t%.2f\n", nim, nama, kelas, ipk);
+        System.out.printf("%s\t\t%s\t\t%s\t\t%.1f\n", nama, nim, kelas, ipk);
     }
 }
