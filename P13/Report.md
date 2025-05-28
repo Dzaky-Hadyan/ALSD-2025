@@ -46,3 +46,36 @@ if (isEmpty()) {
                     list.insertAfter(key, mhs);
                 }
 ```
+
+## 2. Praktikum Percobaan 2
+
+Source code dari praktikum percobaan 2 berada di src/Node07.java, src/Mahasiswa07, src/DoubleLinkedList07.java, dan src/DLLMain07.java, dan berikut screenshot dari hasilnya
+
+![Screenshot](img/Screenshot%202025-05-28%20204534.png)
+
+**Jawaban Pertanyaan**
+
+1. Statement `head = head.next;` meng-assign `head` dengan `next` dari `head`, sehingga memindah head ke node setelahnya, sedangkan statement `head.prev = null;` meng-assign `prev` dari `head` dengan null, sehingga menghapus referensi dari `head` kepada node tersebut
+
+2. Pada `removeFirst()`
+```
+} else {
+            System.out.printf("Data sudah berhasil dihapus. Data yang terhapus adalah %s", head.data.nama);
+            head = head.next;
+            head.prev = null;
+        }
+```
+Pada `removeLast()`
+```
+        } else {
+            System.out.printf("Data sudah berhasil dihapus. Data yang terhapus adalah %s", tail.data.nama);
+            tail = tail.prev;
+            tail.next = null;
+        }
+```
+
+## Tugas
+
+Source code dari praktikum percobaan 2 berada di src/Node07.java, src/Mahasiswa07, src/DoubleLinkedList07.java, dan src/DLLMain07.java, dan berikut screenshot dari hasilnya
+
+![Screenshot](img/Screenshot%202025-05-28%20204534.png)

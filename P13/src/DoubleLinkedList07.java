@@ -89,4 +89,32 @@ public class DoubleLinkedList07 {
             return null;
         }
     }
+
+    public void removeFirst() {
+        if (isEmpty()) {
+            System.out.println("List kosong, tidak bisa dihapus.");
+            return;
+        }
+        if (head == tail) {
+            head = tail = null;
+        } else {
+            System.out.printf("Data sudah berhasil dihapus. Data yang terhapus adalah %s", head.data.nama);
+            head = head.next;
+            head.prev = null;
+        }
+    }
+
+    public void removeLast() {
+        if (isEmpty()) {
+            System.out.println("List kosong, tidak bisa dihapus.");
+            return;
+        }
+        if (head == tail) {
+            head = tail = null;
+        } else {
+            System.out.printf("Data sudah berhasil dihapus. Data yang terhapus adalah %s", tail.data.nama);
+            tail = tail.prev;
+            tail.next = null;
+        }
+    }
 }
