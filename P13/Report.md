@@ -76,6 +76,10 @@ Pada `removeLast()`
 
 ## Tugas
 
-Source code dari praktikum percobaan 2 berada di src/Node07.java, src/Mahasiswa07, src/DoubleLinkedList07.java, dan src/DLLMain07.java, dan berikut screenshot dari hasilnya
+Source code dari tugas berada di src/Node07.java, src/Mahasiswa07, src/DoubleLinkedList07.java, dan src/DLLMain07.java, dan berikut screenshot dari hasilnya
 
-![Screenshot](img/Screenshot%202025-05-28%20204534.png)
+![Screenshot](img/Screenshot%202025-05-29%20114003.png)
+![Screenshot](img/Screenshot%202025-05-29%20114055.png)
+![Screenshot](img/Screenshot%202025-05-29%20114132.png)
+![Screenshot](img/Screenshot%202025-05-29%20114157.png)
+![Screenshot](img/Screenshot%202025-05-29%20114229.png)

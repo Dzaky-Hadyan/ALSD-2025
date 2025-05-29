@@ -2,6 +2,7 @@ package P13.src;
 
 public class DoubleLinkedList07 {
     Node07 head, tail;
+    int size = 0;
 
     public DoubleLinkedList07() {
         head = null;
@@ -21,6 +22,7 @@ public class DoubleLinkedList07 {
             head.prev = baru;
             head = baru;
         }
+        size++;
     }
 
     public void addLast(Mahasiswa07 data) {
@@ -32,6 +34,7 @@ public class DoubleLinkedList07 {
             baru.prev = tail;
             tail = baru;
         }
+        size++;
     }
 
     public void insertAfter(String keyNim, Mahasiswa07 data) {
@@ -58,7 +61,7 @@ public class DoubleLinkedList07 {
             current.next.prev = baru;
             current.next = baru;
         }
-
+        size++;
         System.out.printf("Node berhasil disisipkan setelah NIM %s", keyNim);
     }
 
@@ -102,6 +105,7 @@ public class DoubleLinkedList07 {
             head = head.next;
             head.prev = null;
         }
+        size--;
     }
 
     public void removeLast() {
@@ -116,5 +120,116 @@ public class DoubleLinkedList07 {
             tail = tail.prev;
             tail.next = null;
         }
+        size--;
+    }
+
+    public void add(int index, Mahasiswa07 data) {
+        Node07 current = head;
+        int idx = 0;
+
+        while (current != null && idx != index) {
+            current = current.next;
+            idx++;
+        }
+
+        if (current == null) {
+            System.out.printf("Node dengan index %d tidak ditemukan.\n", index);
+            return;
+        }
+
+        Node07 baru = new Node07(data);
+
+        if (current == tail) {
+            current.next = baru;
+            baru.prev = current;
+            tail = baru;
+        } else {
+            baru.next = current.next;
+            baru.prev = current;
+            current.next.prev = baru;
+            current.next = baru;
+        }
+        size++;
+        System.out.printf("Node berhasil disisipkan pada index ke-%d", index);
+    }
+
+    public void removeAfter(String key) {
+        Node07 current = head;
+
+        while (current != null && !current.data.nim.equals(key)) {
+            current = current.next;
+        }
+
+        if (current == null) {
+            System.out.printf("Node dengan NIM %s tidak ditemukan.\n", key);
+            return;
+        }
+
+        if (current == tail) {
+            System.out.printf("Tidak ada node setelah %s!\n", key);
+            return;
+        } else if (current.next == tail) {
+            tail = current;
+            current.next = null;
+        } else {
+            current.next = current.next.next;
+            current.next.prev = current;
+        }
+        size--;
+        System.out.printf("Node setelah NIM %s berhasil dihapus\n", key);
+    }
+
+    public void remove(int index) {
+        Node07 current = head;
+        int idx = 0;
+
+        while (current != null && idx != index) {
+            current = current.next;
+            idx++;
+        }
+
+        if (current == null) {
+            System.out.printf("Node dengan index %d tidak ditemukan.\n", index);
+            return;
+        }
+
+        if (current == head) {
+            head = current.next;
+            current = null;
+        } else if (current == tail) {
+            tail = current.prev;
+            current = null;
+        } else {
+            current.prev.next = current.next;
+            current.next.prev = current.prev;
+        }
+        size--;
+        System.out.printf("Node pada index ke-%d berhasil dihapus\n", index);
+    }
+
+    public void getFirst() {
+        head.data.tampil();
+    }
+
+    public void getLast() {
+        tail.data.tampil();
+    }
+
+    public void get(int index) {
+        Node07 current = head;
+        int idx = 0;
+        while (current != null && idx != index) {
+            current = current.next;
+            idx++;
+        }
+        if (current == null) {
+            System.out.printf("Node dengan index %d tidak ditemukan.\n", index);
+            return;
+        }
+        current.data.tampil();
+    }
+
+    public void size() {
+        System.out.printf("Jumlah data: %d\n", size);
     }
 }

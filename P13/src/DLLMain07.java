@@ -16,6 +16,13 @@ public class DLLMain07 {
             System.out.println("5. Tampilkan data");
             System.out.println("6. Cari Mahasiswa berdasarkan NIM");
             System.out.println("7. Tambah setelah NIM");
+            System.out.println("8. Tambah pada indeks");
+            System.out.println("9. Hapus setelah NIM");
+            System.out.println("10. Hapus pada indeks");
+            System.out.println("11. Tampil awal");
+            System.out.println("12. Tampil akhir");
+            System.out.println("13. Tampil pada indeks");
+            System.out.println("14. Tampil jumlah data");
             System.out.println("0. Keluar");
             System.out.print("Pilih menu: ");
             pilihan = sc.nextInt();
@@ -49,6 +56,30 @@ public class DLLMain07 {
                     Mahasiswa07 mhs = inputMahasiswa(sc);
                     list.insertAfter(key, mhs);
                 }
+                case 8 -> {
+                    System.out.print("Masukkan indeks: ");
+                    int index = sc.nextInt();sc.nextLine();
+                    Mahasiswa07 mhs = inputMahasiswa(sc);
+                    list.add(index, mhs);
+                }
+                case 9 -> {
+                    System.out.print("Masukkan NIM: ");
+                    String nim = sc.nextLine();
+                    list.removeAfter(nim);
+                }
+                case 10 -> {
+                    System.out.print("Masukkan index: ");
+                    int index = sc.nextInt();
+                    list.remove(index);
+                }
+                case 11 -> list.getFirst();
+                case 12 -> list.getLast();
+                case 13 -> {
+                    System.out.print("Masukkan index: ");
+                    int index = sc.nextInt();
+                    list.get(index);
+                }
+                case 14 -> list.size();
                 case 0 -> System.out.println("Keluar dari program.");
                 default -> System.out.println("Pilihan invalid!");
             }
