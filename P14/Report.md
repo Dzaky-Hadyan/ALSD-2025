@@ -30,8 +30,22 @@ b. Nilai dari `root` adalah null
 
 Source code dari kegiatan praktikum 2 berada di src/Mahasiswa07.java, src/Node07.java, src/BinaryTreeArray07.java, dan src/BinaryTreeArrayMain07.java, dan berikut screenshot dari hasilnya
 
-![Screenshot](img/Screenshot%202025-05-26%20114745.png)
+![Screenshot](img/praktikum2.png)
 
 **Jawaban Pertanyaan**
 
-1. 
+1. Atribut `data` berfungsi untuk menyimpan objek-objek `Mahasiswa07` yang digunakan untuk menyimpan struktur binary tree dalam bentuk array, sedangkan atribut `idxLast` berfungsi sebagai indeks maksimum array
+
+2. Method `populateData()` berfungsi untuk mengisi array `dataMahasiswa` dengan `dataMhs[]` dan menentukan kapasitas maksimum binary tree
+
+3. Method `traverseInOrder()` berfungsi untuk mengunjungi left-child, menampilkan informasinya, mengunjungi right-child, dan seterusnya, dari index ke `idxStart`
+
+4. left-child berada di indeks 2*2+1=5, sedangkan right-child berada di indeks 2*2+2=6
+
+5. Statement tersebut berfungsi untuk menentukan kapasitas array `dataMahasiswa`, artinya 
+
+6. Indeks tersebut digunakan karena itu merupakan representasi binary tree dalam array 1 dimensi, dimana untuk indeks i, left-child-nya adalah 2*i+1 dan right-child-nya adalah 2*i+2
+
+## Tugas Praktikum
+
+
