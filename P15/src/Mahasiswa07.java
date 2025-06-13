@@ -1,4 +1,4 @@
-package P14.src;
+package P15.src;
 
 public class Mahasiswa07 {
   String nim, nama, kelas;
