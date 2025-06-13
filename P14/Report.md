@@ -48,4 +48,6 @@ Source code dari kegiatan praktikum 2 berada di src/Mahasiswa07.java, src/Node07
 
 ## Tugas Praktikum
 
+Source code dari tugas praktikum berada di src/Mahasiswa07.java, src/BinaryTree07.java, src/BinaryTreeArray07.java, dan src/Tugas.java, dan berikut screenshot dari hasilnya
 
+![Screenshot](img/Tugas.png)
